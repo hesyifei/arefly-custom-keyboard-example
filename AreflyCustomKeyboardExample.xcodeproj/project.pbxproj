@@ -13,6 +13,8 @@
 		30A717221B2C68480034D980 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A717211B2C68480034D980 /* Images.xcassets */; };
 		30A717251B2C68480034D980 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30A717231B2C68480034D980 /* LaunchScreen.xib */; };
 		30A717311B2C68480034D980 /* AreflyCustomKeyboardExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A717301B2C68480034D980 /* AreflyCustomKeyboardExampleTests.swift */; };
+		30A717431B2C689B0034D980 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A717421B2C689B0034D980 /* KeyboardViewController.swift */; };
+		30A717461B2C689B0034D980 /* AreflyCustomKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 30A7173E1B2C689B0034D980 /* AreflyCustomKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +25,28 @@
 			remoteGlobalIDString = 30A717141B2C68480034D980;
 			remoteInfo = AreflyCustomKeyboardExample;
 		};
+		30A717441B2C689B0034D980 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30A7170D1B2C68480034D980 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30A7173D1B2C689B0034D980;
+			remoteInfo = AreflyCustomKeyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30A7174A1B2C689B0034D980 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				30A717461B2C689B0034D980 /* AreflyCustomKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		30A717151B2C68480034D980 /* AreflyCustomKeyboardExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AreflyCustomKeyboardExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +59,9 @@
 		30A7172A1B2C68480034D980 /* AreflyCustomKeyboardExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AreflyCustomKeyboardExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A7172F1B2C68480034D980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30A717301B2C68480034D980 /* AreflyCustomKeyboardExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreflyCustomKeyboardExampleTests.swift; sourceTree = "<group>"; };
+		30A7173E1B2C689B0034D980 /* AreflyCustomKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AreflyCustomKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		30A717411B2C689B0034D980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30A717421B2C689B0034D980 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +79,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		30A7173B1B2C689B0034D980 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +94,7 @@
 			children = (
 				30A717171B2C68480034D980 /* AreflyCustomKeyboardExample */,
 				30A7172D1B2C68480034D980 /* AreflyCustomKeyboardExampleTests */,
+				30A7173F1B2C689B0034D980 /* AreflyCustomKeyboard */,
 				30A717161B2C68480034D980 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +104,7 @@
 			children = (
 				30A717151B2C68480034D980 /* AreflyCustomKeyboardExample.app */,
 				30A7172A1B2C68480034D980 /* AreflyCustomKeyboardExampleTests.xctest */,
+				30A7173E1B2C689B0034D980 /* AreflyCustomKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +147,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		30A7173F1B2C689B0034D980 /* AreflyCustomKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				30A717421B2C689B0034D980 /* KeyboardViewController.swift */,
+				30A717401B2C689B0034D980 /* Supporting Files */,
+			);
+			path = AreflyCustomKeyboard;
+			sourceTree = "<group>";
+		};
+		30A717401B2C689B0034D980 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30A717411B2C689B0034D980 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +174,12 @@
 				30A717111B2C68480034D980 /* Sources */,
 				30A717121B2C68480034D980 /* Frameworks */,
 				30A717131B2C68480034D980 /* Resources */,
+				30A7174A1B2C689B0034D980 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				30A717451B2C689B0034D980 /* PBXTargetDependency */,
 			);
 			name = AreflyCustomKeyboardExample;
 			productName = AreflyCustomKeyboardExample;
@@ -150,6 +204,23 @@
 			productReference = 30A7172A1B2C68480034D980 /* AreflyCustomKeyboardExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		30A7173D1B2C689B0034D980 /* AreflyCustomKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30A717471B2C689B0034D980 /* Build configuration list for PBXNativeTarget "AreflyCustomKeyboard" */;
+			buildPhases = (
+				30A7173A1B2C689B0034D980 /* Sources */,
+				30A7173B1B2C689B0034D980 /* Frameworks */,
+				30A7173C1B2C689B0034D980 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AreflyCustomKeyboard;
+			productName = AreflyCustomKeyboard;
+			productReference = 30A7173E1B2C689B0034D980 /* AreflyCustomKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +236,9 @@
 					30A717291B2C68480034D980 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 30A717141B2C68480034D980;
+					};
+					30A7173D1B2C689B0034D980 = {
+						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
 			};
@@ -183,6 +257,7 @@
 			targets = (
 				30A717141B2C68480034D980 /* AreflyCustomKeyboardExample */,
 				30A717291B2C68480034D980 /* AreflyCustomKeyboardExampleTests */,
+				30A7173D1B2C689B0034D980 /* AreflyCustomKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +274,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		30A717281B2C68480034D980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30A7173C1B2C689B0034D980 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -225,6 +307,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		30A7173A1B2C689B0034D980 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30A717431B2C689B0034D980 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +322,11 @@
 			isa = PBXTargetDependency;
 			target = 30A717141B2C68480034D980 /* AreflyCustomKeyboardExample */;
 			targetProxy = 30A7172B1B2C68480034D980 /* PBXContainerItemProxy */;
+		};
+		30A717451B2C689B0034D980 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30A7173D1B2C689B0034D980 /* AreflyCustomKeyboard */;
+			targetProxy = 30A717441B2C689B0034D980 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -392,6 +487,30 @@
 			};
 			name = Release;
 		};
+		30A717481B2C689B0034D980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AreflyCustomKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		30A717491B2C689B0034D980 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AreflyCustomKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,6 +536,14 @@
 			buildConfigurations = (
 				30A717381B2C68480034D980 /* Debug */,
 				30A717391B2C68480034D980 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		30A717471B2C689B0034D980 /* Build configuration list for PBXNativeTarget "AreflyCustomKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30A717481B2C689B0034D980 /* Debug */,
+				30A717491B2C689B0034D980 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
